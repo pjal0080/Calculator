@@ -1,4 +1,4 @@
-import CaclController from './CalcController';
+import CaclController from './calc/calcController';
 function App() {
   return (
     <CaclController />

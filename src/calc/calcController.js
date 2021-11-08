@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import CalcView from "./CalcView";
+import CalcView from "./calcView";
 
 class CaclController extends Component{
 
@@ -32,9 +32,15 @@ class CaclController extends Component{
     }
 
     calculateResult(){
-        this.setState({
-            result : eval(this.state.result).toString()
-        })
+        try{
+            this.setState({
+                result : eval(this.state.result).toString()
+            })
+        }
+        catch(err){
+            this.setState({result : 'Error'})
+        }
+       
     }
 
 
