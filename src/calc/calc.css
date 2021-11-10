@@ -13,32 +13,43 @@
 
 .wrapper{
     width: 400px;
-    height: 600px;
+    height: 500px;
+    background-color: #000000;
 }
 
 input {
     height: 4em;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     font-weight: bold;
     font-size: 1.4em;
     background-color: #000000;
     color: #ffffff;
     padding: 0.5em;
-/* outline: 1px solid #888888; */
+    text-align: right;
     width: 375px;
   }
 
 button{
-    height: 3em;
+    height: 2.5em;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: lighter;
-    font-size: 1.4em;
-    background-color: #e0e1e6;
-    color: #888888;
+    font-size: 1.6em;
+    background-color: #262834;
+    color: white;
     flex: 1;
-    outline: 1px solid #888888;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+button:active{
+    outline: none;
+}
+
+.orange{
+    background-color: orange;
 }
