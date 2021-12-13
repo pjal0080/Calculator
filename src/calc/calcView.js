@@ -16,7 +16,7 @@ class CalcView extends Component {
                     
 
                     <div className = "row">
-                        <button name = "1" onClick = {concatHandler}>1</button>
+                        <button  name = "1" onClick = {concatHandler}>1</button>
                         <button name = "2" onClick = {concatHandler}>2</button>
                         <button name = "3" onClick = {concatHandler}>3</button>
                         <button className = "orange" name = "+" onClick = {concatHandler}>+</button>
@@ -40,13 +40,13 @@ class CalcView extends Component {
                     <div className = "row">
                         <button name = "." onClick = {concatHandler}>.</button>
                         <button name = "0" onClick = {concatHandler}>0</button>
-                        <button  onClick = {backspace}>C</button>
+                        <button id = "backspace" onClick = {backspace}>C</button>
                         <button className = "orange" name = "/" onClick = {concatHandler}>&divide;</button>
                     </div>
 
                     <div className = "row">
-                        <button className = "orange" onClick = {clearScr}>Clear</button>
-                        <button className = "orange" onClick = {result}>=</button>
+                        <button id = "clear" className = "orange" onClick = {clearScr}>Clear</button>
+                        <button id = "result" className = "orange" onClick = {result}>=</button>
                     </div>                   
             
                 </div>
